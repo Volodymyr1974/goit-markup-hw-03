@@ -31,6 +31,14 @@
     --footer-color: #2F303A;
 }
 
+h1,
+h2,
+h3,
+ul,
+p {
+    margin: 0;
+}
+
 body {
     background: var(--white-color-bgc-text);
     color: var(-primary-text-color);
@@ -41,6 +49,15 @@ body {
 
 .list {
     list-style: none;
+}
+
+.container {
+    outline: 3px solid salmon;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
@@ -83,6 +100,12 @@ body {
 
 /* Контакты сайта */
 
+
+/* .contacts {
+    margin: 0; */
+
+
+}
 .contacts .link {
     color: var(--secondary-text-color);
     font-weight: 500;
@@ -90,12 +113,10 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
 }
-
 .address .link {
     color: var(--contacts-text-color);
     text-decoration: none;
 }
-
 .contacts .link:hover,
 .contacts .link:focus,
 .address .link:hover,
@@ -103,14 +124,11 @@ body {
     color: var(--accent-color);
 }
 
-
 /* Герой для index.html*/
-
 .hero,
 .footer {
     background-color: var(--footer-color);
 }
-
 .hero-title {
     color: var(--white-color-bgc-text);
     font-weight: 900;
@@ -120,7 +138,6 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-
 .hero .btn {
     color: var(--white-color-bgc-text);
     background-color: var(--accent-color);
@@ -132,81 +149,67 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-
 /* Главные секции сайта */
-
 .advantage-subject {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
-
 .advantage-text {
     line-height: 1.71;
 }
-
 .advantage-text,
 .team-position,
 .portfolio-text {
     color: var(--secondary-text-color);
 }
-
 .works-title,
 .team-title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
 }
-
 .team {
     background-color: var(--secondary-bgc-color);
 }
-
 .team-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
 }
-
 .team-position {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
 }
-
 .portfolio-subject {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
-
 .portfolio-text {
     font-size: 16px;
     line-height: 1.88;
 }
 
-
 /* identical to box height, or 187% */
 
-
 /* Футер */
-
 .text.end {
     color: var(--white-color-bgc-text);
 }
-
 .address {
     color: var(--white-color-bgc-text);
     font-style: normal;
     line-height: 1.71;
 }
 
-
 /* Кнопки */
-
 .btn {
     background-color: var(--secondary-bgc-color);
     color: var(--primary-text-color);
@@ -218,7 +221,6 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
 }
-
 .btn:hover,
 .btn:focus {
     background-color: var(--accent-color);
