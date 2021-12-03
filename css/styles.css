@@ -85,6 +85,7 @@ body {
 }
 
 .logo {
+    display: block;
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -98,8 +99,41 @@ body {
     color: var(--primary-text-color);
 }
 
+.page-header .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
 
 /* Навигация сайта */
+
+.box {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+    padding-left: 0;
+    margin-left: 93px;
+}
+
+.site-nav .link,
+.contacts .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.site-nav>.item:not(:last-child),
+.contacts>.item:not(:last-child) {
+    margin-right: 50px;
+}
 
 .site-nav .link {
     color: var(--primary-text-color);
@@ -120,6 +154,12 @@ body {
 
 
 /* Контакты сайта */
+
+.contacts {
+    display: flex;
+    padding-left: 0;
+    margin-left: auto;
+}
 
 .contacts .link {
     color: var(--secondary-text-color);
@@ -183,6 +223,24 @@ body {
 
 /* Главные секции сайта */
 
+.advantage .list {
+    display: flex;
+    padding-left: 0;
+}
+
+.advantage.list .item {
+    display: block;
+    background-color: rgb(223, 236, 229);
+}
+
+
+/* .advantage .list {
+    padding-left: 0; */
+
+.advantage.list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
 .advantage-subject {
     font-size: 14px;
     line-height: 1.14;
@@ -206,6 +264,16 @@ body {
     line-height: 1.17;
     text-align: center;
     margin-bottom: 50px;
+}
+
+.works.list {
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+}
+
+.works-foto {
+    display: block;
 }
 
 .team {
@@ -281,7 +349,7 @@ body {
     padding: 0;
 }
 
-.list .item:not(:last-child) {
+.address-list>.item:not(:last-child) {
     margin-bottom: 9px;
 }
 
