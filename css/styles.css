@@ -47,8 +47,15 @@ body {
     letter-spacing: 0.03em;
 }
 
-.list {
+ul {
     list-style: none;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -114,7 +121,7 @@ body {
 
 .site-nav {
     display: flex;
-    padding-left: 0;
+    /* padding-left: 0; */
     margin-left: 93px;
 }
 
@@ -152,7 +159,7 @@ body {
 
 .contacts {
     display: flex;
-    padding-left: 0;
+    /* padding-left: 0; */
     margin-left: auto;
 }
 
@@ -229,7 +236,7 @@ body {
 .works.list,
 .member.list {
     display: flex;
-    padding-left: 0;
+    /* padding-left: 0; */
 }
 
 .advantage.list .item {
@@ -259,6 +266,10 @@ body {
     color: var(--secondary-text-color);
 }
 
+.works {
+    padding-top: 0;
+}
+
 .works-title,
 .team-title {
     font-size: 36px;
@@ -267,9 +278,10 @@ body {
     margin-bottom: 50px;
 }
 
-.works-foto {
+
+/* .works-foto {
     display: block;
-}
+} */
 
 .team {
     background-color: var(--secondary-bgc-color);
@@ -282,13 +294,15 @@ body {
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-img {
+
+/* .team-img {
     display: block;
     margin-bottom: 30px;
-}
+} */
 
 .team-box {
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-name {
@@ -329,22 +343,24 @@ body {
 }
 
 .flex-box>.item {
-    display: block;
-    flex-basis: calc(100%/3-30px);
+    /* display: block; */
+    flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
     border: 1px solid #EEEEEE;
 }
 
-.portfolio-img {
+
+/* .portfolio-img {
     display: block;
     margin-bottom: 20px;
-}
+} */
 
 .portfolio-box {
-    margin-bottom: 20px;
-    margin-left: 24px;
-    margin-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .portfolio-subject {
